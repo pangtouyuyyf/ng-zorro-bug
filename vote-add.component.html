@@ -1,0 +1,11 @@
+       <div>
+            <div class="clearfix">
+                <nz-upload class="upload-list-inline" nzAction="/services/uploadVoteImg" nzListType="picture" [(nzFileList)]="img" [nzBeforeUpload]="beforeUpload"
+                    [nzLimit]="1" [nzRemove]="remove" (nzChange)="handleChange($event)">
+                    <button nz-button>
+                        <span>
+                            <i class=" anticon anticon-upload "></i>上传</span>
+                    </button>
+                </nz-upload>
+            </div>
+        </div>
